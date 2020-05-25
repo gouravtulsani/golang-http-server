@@ -3,7 +3,7 @@ package api_server
 import (
 	"github.com/gin-gonic/gin"
 	kafka "github.com/segmentio/kafka-go"
-  "github.com/gouravtulsani/hello-golang/api_server/http_handler"
+	"github.com/gouravtulsani/fun-with-go/api_server/http_handler"
 )
 
 func Init() {
