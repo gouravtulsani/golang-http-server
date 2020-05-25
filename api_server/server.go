@@ -3,7 +3,6 @@ package api_server
 import (
 	"github.com/gin-gonic/gin"
 	kafka "github.com/segmentio/kafka-go"
-	"github.com/gouravtulsani/fun-with-go/api_server/http_handler"
 )
 
 func Init() {
@@ -20,7 +19,7 @@ func Init() {
 	defer w.Close()
 
 	r := gin.Default()
-	r.POST("/msg", func(c *gin.Context) {http_handler.MsgHandler(c, w)})
+	r.POST("/msg", func(c *gin.Context) {MsgHandler(c, w)})
 
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
