@@ -1,4 +1,4 @@
-module github.com/gouravtulsani/hello-golang
+module github.com/gouravtulsani/fun-with-go
 
 go 1.14
 
